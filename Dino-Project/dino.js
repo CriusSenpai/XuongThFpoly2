@@ -12,6 +12,7 @@ const FRAME_TIME = 100
 let gameSound = new Audio("audio/hit_sound.mp3");
 gameSound.volume=0.5;
 let Collisionsound = new Audio("audio/press_sound.mp3");
+let CoinSound = new Audio("audio/coin-collect.mp3");
 Collisionsound.volume = 0.5;
 
 let isJumping
@@ -41,6 +42,9 @@ export function setDinoLose() {
   dinoElem.src = "images/dino-lose.png"
   Collisionsound.play();
   
+}
+export function setDinoCoin() {
+  CoinSound.play();
 }
 
 function handleRun(delta, speedScale) {

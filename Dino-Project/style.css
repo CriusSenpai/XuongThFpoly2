@@ -37,7 +37,7 @@ body {
   text-overflow: ellipsis; /* Truncate with ellipsis if too long */
 }
 
-.highscore {
+.point {
   font-size: 2vmin;
   color: black;
   right: 10vmin;
@@ -123,6 +123,12 @@ body {
   left: calc(var(--left) * 1%);
   height: 30%;
   bottom: 0;
+}
+.coin {
+  position: absolute;
+  left: calc(var(--left) * 1%);
+  height: 20%;
+  bottom: 50%;
 }
 
 .logo {
